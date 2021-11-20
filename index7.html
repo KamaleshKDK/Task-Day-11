@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            font-size: 15px;
+        }
+
+        .container {
+
+            max-width: 400px;
+            width: 100%;
+            margin: 200px auto;
+            position: relative;
+            outline: 3px solid black;
+            outline-offset: -15px;
+
+
+        }
+
+        #form {
+            background: white;
+            padding: 25px;
+        }
+
+        #form h2 {
+            background-color: red;
+            text-align: center;
+            margin: auto;
+            font-size: 20px;
+            padding: 2px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        #form input[type="text"],input[type="number"] {
+            font-family: 'Times New Roman', Times, serif;
+            padding-bottom: 4px;
+            font-size: 15px;
+            font-style: italic;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #000000;
+
+
+        }
+
+        #box1 {
+            padding: 5px;
+            font-weight: bold;
+
+        }
+
+        #box2 {
+            font-weight: bold;
+            padding: 5px;
+    }
+  
+    </style>
+    <div id="border"></div>
+    <div class="container">
+        <form id="form" action="" method="post">
+            <h2>
+                Yes! I want to Subscribe to
+                <i style="font-family: sans-serif">Mag-O-Zine</i>
+            </h2>
+
+            <input placeholder="First Name" type="text" name="First Name" />
+            <input placeholder="Last Name" type="text" name="Last Name" /><br>
+            <input placeholder="Address" type="text" name="Address" /><br>
+            <input placeholder="City" type="text" name="City" />
+            <input  placeholder="State" type="text" name="State" />
+            <input  placeholder="Zip" type="number" name="Zip" />
+            <div id="box1">
+                <label>Subscribe for : </label><input type="checkbox" />
+                <label> 1 Year ($19.95)</label><input type="checkbox" />
+                <label>2 Years ($35.00)</label>
+            </div>
+            <div id="box2">
+                <label>Send me more information about :</label><br>
+                <input type="checkbox" /><label>Computer-Zine</label><br>
+                <input type="checkbox" /><label>Fishing-Zine</label><br>
+                <input type="checkbox" /><label>Cat-O-Zine</label><br>
+            </div>
+
+
+        </form>
+
+</body>
+
+</html>
